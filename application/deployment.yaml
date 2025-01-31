@@ -3,16 +3,16 @@ kind: Deployment
 metadata:
   name: wil-playground
   labels:
-    app: main
+    app: release
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: main
+      app: release
   template:
     metadata:
       labels:
-        app: main
+        app: release
     spec:
       containers:
       - name: wil-playground-cont
